@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Coffe Connisseur</title>
+        <title>Coffe Connoisseur</title>
        
         <link rel = 'icon' href = '/favion.ico'/>
       </Head>
