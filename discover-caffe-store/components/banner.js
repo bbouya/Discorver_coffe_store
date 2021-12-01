@@ -1,5 +1,7 @@
-import styles from "C:/Users/elgha/Documents/GitHub/Discorver_coffe_store/discover-caffe-store/styles/banner.module.css";
+import styles from "/components/banner.module.css";
 
+
+//C:/Users/elgha/Documents/GitHub/Discorver_coffe_store/components/styles/banner.module.css
 const Banner = (props) => {
     return  (<div className={styles.container}>
                 <h1 className={styles.title}>
@@ -7,7 +9,7 @@ const Banner = (props) => {
                     <span className = {styles.title2}>Connoisseur</span> 
                 </h1>
                 <p className = {styles.subtitle}>Discover your local coffe shops!</p>
-                <button className = {styles.button}>{props.buttonText}</button>
+                <button className = {styles.button} onClick={props.handleOnClick}>{props.buttonText}</button>
     
             </div>);
 };

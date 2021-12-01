@@ -4,7 +4,11 @@ import styles from '../styles/Home.module.css'
 import Banner from '../components/banner'
 
 export default function Home() {
-  console.log('styles', styles)
+  console.log('ayoub')
+  const handleOnBannerBtnClick = () =>{
+    console.log('hadchi rah 5dam abro good jobs')
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +19,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Coffe Conno</h1>
-        <Banner buttonText = 'View stores nearby'/>
+        <Banner buttonText = 'View stores nearby' handleOnclick = {handleOnBannerBtnClick}/>
       </main>
       
      
